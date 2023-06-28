@@ -1,0 +1,16 @@
+.ItemInsurance {
+  transition: 0.3s;
+
+  .ItemInsurance-icon,
+  .ItemInsurance-title {
+    color: rgb(79, 201, 201) !important;
+    transition: 0.3s;
+
+    &:hover {
+      color: rgb(144, 45, 51) !important;
+    }
+  }
+  &:hover {
+    transform: scale(1.2);
+  }
+}

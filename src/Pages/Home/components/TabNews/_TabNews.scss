@@ -1,0 +1,20 @@
+.TabNews {
+  .nav-tabs {
+    display: flex;
+    padding: 0 !important;
+    justify-content: center !important;
+    .nav-item {
+      background-color: white !important;
+      border: 2px solid rgb(8, 138, 138);
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+    .nav-link {
+      color: black !important;
+    }
+    .active {
+      background-color: rgb(15, 152, 152) !important;
+      color: white !important;
+    }
+  }
+}

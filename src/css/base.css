@@ -1,0 +1,234 @@
+@font-face {
+  font-family: Yekan;
+  src: url("/public/fonts/Yekan.ttf");
+}
+* {
+  font-family: Yekan;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-width: 350px;
+}
+
+.fsc-6 {
+  font-size: 1rem !important;
+}
+
+a {
+  text-decoration: none;
+  color: black !important;
+  text-decoration: none !important;
+}
+a:hover {
+  color: rgb(52, 180, 180) !important;
+}
+
+.topOfNav {
+  background: rgb(2, 139, 255);
+}
+
+@media screen and (max-width: 578px) {
+  .menu-Mobile {
+    position: absolute;
+    top: 110%;
+    height: 0;
+    z-index: 10;
+    background-color: rgb(211, 230, 230);
+    overflow: hidden;
+    padding: 0 !important;
+  }
+}
+@media screen and (min-width: 579px) {
+  .menu-Mobile {
+    position: relative;
+  }
+}
+.openMenuClass {
+  -webkit-animation-name: openMenu;
+  animation-name: openMenu;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+}
+
+.closeMenuClass {
+  -webkit-animation-name: closeMenu;
+  animation-name: closeMenu;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+}
+
+@-webkit-keyframes openMenu {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 100vh;
+  }
+}
+@keyframes openMenu {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 100vh;
+  }
+}
+@-webkit-keyframes closeMenu {
+  0% {
+    height: 100vh;
+  }
+  100% {
+    height: 0%;
+  }
+}
+@keyframes closeMenu {
+  0% {
+    height: 100vh;
+  }
+  100% {
+    height: 0%;
+  }
+}
+@media screen and (max-width: 578px) {
+  .Slider {
+    height: 13rem;
+  }
+}
+.Footer .mainFooter {
+  background-color: rgb(95, 94, 94);
+}
+.Footer a {
+  color: white !important;
+  transition: 0.4s;
+}
+.Footer a:hover {
+  color: rgb(205, 79, 79) !important;
+}
+
+.ItemInsurance {
+  transition: 0.3s;
+}
+.ItemInsurance .ItemInsurance-icon,
+.ItemInsurance .ItemInsurance-title {
+  color: rgb(79, 201, 201) !important;
+  transition: 0.3s;
+}
+.ItemInsurance .ItemInsurance-icon:hover,
+.ItemInsurance .ItemInsurance-title:hover {
+  color: rgb(144, 45, 51) !important;
+}
+.ItemInsurance:hover {
+  transform: scale(1.2);
+}
+
+.TabNews .nav-tabs {
+  display: flex;
+  padding: 0 !important;
+  justify-content: center !important;
+}
+.TabNews .nav-tabs .nav-item {
+  background-color: white !important;
+  border: 2px solid rgb(8, 138, 138);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.TabNews .nav-tabs .nav-link {
+  color: black !important;
+}
+.TabNews .nav-tabs .active {
+  background-color: rgb(15, 152, 152) !important;
+  color: white !important;
+}
+
+.InsurancesPage .cardItem {
+  background-color: white;
+  transition: 0.5s;
+  color: black !important;
+}
+.InsurancesPage .cardItem:hover {
+  color: white !important;
+  background-color: rgb(28, 166, 166);
+}
+
+.deyAtGlance .studentsItem {
+  background: rgb(11, 13, 13);
+  background: linear-gradient(38deg, rgb(11, 13, 13) 13%, rgb(0, 255, 245) 100%);
+}
+
+@media screen and (min-width: 578px) {
+  .leftSide {
+    border-right: 2px solid rgb(38, 176, 176) !important;
+  }
+}
+.top-to-btm {
+  position: relative;
+}
+
+.icon-position {
+  position: fixed;
+  bottom: 40px;
+  right: 25px;
+  z-index: 20;
+}
+
+.icon-style {
+  background-color: #17c9ff;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  color: #fff;
+  cursor: pointer;
+  -webkit-animation: movebtn 3s ease-in-out infinite;
+  animation: movebtn 3s ease-in-out infinite;
+  transition: all 0.5s ease-in-out;
+}
+
+.icon-style:hover {
+  -webkit-animation: none;
+  animation: none;
+  background: #fff;
+  color: #551b54;
+  border: 2px solid #551b54;
+}
+
+@-webkit-keyframes movebtn {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(20px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes movebtn {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(20px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}/*# sourceMappingURL=base.css.map */

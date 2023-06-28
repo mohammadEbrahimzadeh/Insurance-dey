@@ -1,0 +1,35 @@
+@font-face {
+  font-family: Yekan;
+  src: url("/public/fonts/Yekan.ttf");
+}
+* {
+  font-family: Yekan;
+  padding: 0;
+  margin: 0;
+}
+body {
+  min-width: 350px;
+}
+.fsc-6 {
+  font-size: 1rem !important;
+}
+.fsc-5 {
+}
+.fsc-4 {
+}
+.fsc-3 {
+}
+.fsc-2 {
+}
+.fsc-1 {
+}
+a {
+}
+@import "golobalComponents/NavBar/_NavBar.scss";
+@import "golobalComponents/slider/_Slider.scss";
+@import "golobalComponents/Footer/_Footer.scss";
+@import "Pages/Home/_Home.scss";
+@import "Pages/InsurancesPage/_InsurancesPage.scss";
+@import "Pages/DeyAtGlance/_DeyAtGlance.scss";
+@import "Pages/contactUs/_contactUs.scss";
+@import "golobalComponents/ScrollButton/_ScrollButton.scss";

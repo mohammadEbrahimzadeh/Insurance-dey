@@ -1,0 +1,83 @@
+a {
+  text-decoration: none;
+  color: black !important;
+  text-decoration: none !important;
+  &:hover {
+    color: rgb(52, 180, 180) !important;
+  }
+}
+.topOfNav {
+  background: rgba(2, 139, 255, 1);
+}
+@media screen and (max-width: 578px) {
+  .menu-Mobile {
+    position: absolute;
+    top: 110%;
+    height: 0;
+    z-index: 10;
+    background-color: rgb(211, 230, 230);
+    overflow: hidden;
+    padding: 0 !important;
+  }
+}
+@media screen and (min-width: 579px) {
+  .menu-Mobile {
+    position: relative;
+  }
+}
+.openMenuClass {
+  -webkit-animation-name: openMenu;
+  animation-name: openMenu;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+}
+.closeMenuClass {
+  -webkit-animation-name: closeMenu;
+  animation-name: closeMenu;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+}
+
+@-webkit-keyframes openMenu {
+  0% {
+    height: 0%;
+  }
+  100% {
+    // height: 255%;
+    height: 100vh;
+  }
+}
+
+@keyframes openMenu {
+  0% {
+    height: 0%;
+  }
+  100% {
+    // height: 255%;
+    height: 100vh;
+  }
+}
+
+@-webkit-keyframes closeMenu {
+  0% {
+    // height: 255%;
+    height: 100vh;
+  }
+  100% {
+    height: 0%;
+  }
+}
+
+@keyframes closeMenu {
+  0% {
+    // height: 255%;
+    height: 100vh;
+  }
+  100% {
+    height: 0%;
+  }
+}

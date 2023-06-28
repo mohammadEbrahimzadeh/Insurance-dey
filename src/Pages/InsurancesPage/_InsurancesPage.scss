@@ -1,0 +1,12 @@
+.InsurancesPage {
+  .cardItem {
+    background-color: white;
+    transition: 0.5s;
+    color: black !important;
+    &:hover {
+      color: white !important;
+
+      background-color: rgb(28, 166, 166);
+    }
+  }
+}
