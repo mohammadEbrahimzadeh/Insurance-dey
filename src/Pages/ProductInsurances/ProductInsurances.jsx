@@ -3,6 +3,7 @@ import { BsInfoCircle } from "react-icons/bs";
 import { GoDotFill } from "react-icons/go";
 import { TbAd2, TbReportAnalytics } from "react-icons/tb";
 import { useParams, useNavigate } from "react-router-dom";
+import dataProducts from "./dataProducts";
 export default function ProductInsurances() {
   const { idProductUrl } = useParams();
   const [AllDataThisPage, setAllDataThisPage] = useState();
